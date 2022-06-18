@@ -18,6 +18,7 @@
 ***************/
 .home {
   background-image: url("../images/bg-home.jpg");
+  background-attachment: fixed;
   height: 100vh;
   background-size: cover;
   position: relative;
@@ -176,6 +177,7 @@
 .services h2 {
   font-weight: 400;
   font-size: 50px;
+  margin-bottom: 10px;
 }
 .services .boxes {
   margin-top: 60px;
@@ -194,4 +196,156 @@
   margin-top: 20px;
   font-size: 14px;
   line-height: 26px;
+}
+/**********************
+  ***** APPOINMET *****
+***********************/
+.appointment {
+  background-color: var(--color-primary);
+  height: 100vh;
+  padding: 100px 0;
+  background-image: url("../images/chair-ic.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 300px;
+}
+.appointment h2 {
+  font-weight: 400;
+  text-align: center;
+  font-size: 50px;
+  color: var(--color-primary-light);
+  margin-bottom: 10px;
+}
+.appointment img {
+  display: block;
+  margin: 10px auto;
+}
+.appointment .personal-data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.appointment form {
+  margin-top: 80px;
+}
+.appointment .personal-data .input-wrapper {
+  width: 100%;
+  margin-right: 50px;
+}
+.appointment label {
+  display: block;
+  color: var(--color-primary-light);
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.appointment .personal-data input,
+.appointment .personal-data select,
+.appointment .personal-data textarea {
+  padding: 10px;
+  outline: none;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+}
+.appointment .personal-data textarea {
+  height: 120px;
+}
+.appointment button {
+  background-color: var(--color-secundary);
+  color: #fff;
+  padding: 14px 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/**********************
+  ***** GALLERY *****
+***********************/
+.gallery {
+  background-color: var(--color-primary-light);
+  padding: 100px 0;
+}
+.gallery h2 {
+  font-weight: 400;
+  text-align: center;
+  font-size: 50px;
+  color: var(--color-secundary);
+  margin-bottom: 10px;
+}
+.gallery img {
+  display: block;
+  margin: 0 auto;
+}
+.gallery .gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 860px;
+  height: 100vh;
+  margin: 50px auto;
+}
+.gallery .gallery-wrapper div {
+  border: 10px solid var(--color-primary);
+  margin: 6px;
+  width: 33%;
+}
+.gallery .gallery-wrapper div img {
+  width: 100%;
+}
+/**********************
+  ***** LOCATION *****
+***********************/
+.location {
+  padding: 100px 0;
+  background-image: url("../images/bg-location.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.location .head {
+  background-color: #191919;
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.location .head .info {
+  display: flex;
+  align-items: center;
+}
+.location .head .info .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--color-primary);
+  border-radius: 100%;
+}
+.location .head .info .text span {
+  display: block;
+  font-size: 13px;
+}
+.location .head .info .text span:first-child {
+  color: silver;
+}
+.location .head .info .text span:last-child {
+  color: #fff;
+}
+.location .map {
+  width: 100%;
+}
+.location .map iframe {
+  width: 100%;
+}
+.footer {
+  background-color: #191919;
+  text-align: center;
+  padding: 40px 0;
+  color: #fff;
+  font-size: 12px;
 }
